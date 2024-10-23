@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
+        //Testen der Aufgabe 1:
         int[] a ={ 3,5,9,2,7};
         int[] b ={ 1,2,4,1,12};
 
@@ -8,6 +8,14 @@ public class Main {
 
         for( int value : array3){
             System.out.println(value);
+        }
+
+        //Testen der Aufgabe 2:
+        String[] names = {"Ronny", "Billy", "Inge" };
+        String[] newNames = clearIndex(names, 1);
+
+        for( String name : newNames){
+            System.out.println(name);
         }
     }
 
@@ -30,5 +38,19 @@ public class Main {
         }
 
         return newArray;
+    }
+
+    public static String[] clearIndex( String[] strings, int indexToClear) {
+
+        //Die Methode nimmt ein String Array an und setzt den index, welcher geleert werden soll
+        //auf einen leeren String ("")
+
+        for (int i = 0; i < strings.length; i++) {
+            if (i == indexToClear) {
+                strings[i] = "";
+            }
+        }
+
+        return strings;
     }
 }
