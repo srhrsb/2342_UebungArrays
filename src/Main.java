@@ -51,6 +51,11 @@ public class Main {
             }
         }
 
+        //oder einfach:
+        // if(indexToClear>=0 && indexToClear < strings.length - 1){
+        //             strings[indexToClear] = "";
+        //}
+
         return strings;
     }
 }
